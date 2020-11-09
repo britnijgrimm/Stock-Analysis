@@ -13,28 +13,39 @@ We have additionally captured annual return figures for each year. These figures
 
 
 ## Results
+
+#### Macro Efficiency
 Due to the size of our datasets, we have developed a macro to process our analysis at the push of a button. We found that a macro would lend to a concise and readable end result that the user could apply to compare stock market results for 2017 and 2018 with ease. We can later apply similar principals to new stock market data with minimal time investment through minor updates to our macro code. 
 
-First Iteration:
+**First Iteration:**
+
 2017:
+
 ![2017](Resources/VBA_Challenge_2017.png)
+
 2018:
+
 ![2018](Resources/VBA_Challenge_2018.png)
 
 
 Our first iteration of the macro employed nested loops to process through every row of data for each ticker we want to analyze. To determine the amount of time taken to run this first iteration, we initialized a stopwatch module which called our data analysis subroutine. This first iteration of the macro required 1.48 seconds to run our 2017 data and 1.47 seconds to run 2018.
 
-Refactored Code:
+**Refactored Code:**
+
 2017:
+
 ![2017](Resources/VBA_Challenge_2017_Refactored.png)
+
 2018:
+
 ![2018](Resources/VBA_Challenge_2018_Refactored.png)
 
 
 We have refactored the code to eliminate the nested loop and process through the data only one time and collect the data for each ticker and the timer function has been incorporated into our analysis subroutine. Our refactored code now runs for 0.19 seconds for each 2017 and 2018, eliminating over a full second from an already manageable run time.
 
-![Figure 2](Resources/Results_SidebySide.png)
+#### Analysis Results
 
+![Figure 2](Resources/Results_SidebySide.png)
 
 Our initial analysis of DAQO stock in 2017 and 2018 has provided sufficient information to arrive at an informed decision about buying stock in DAQO New Energy. While DAQO stock saw a promising annual return of 199.4% in 2017, the value of DAQO stock decreased 62.6% by the end of 2018. This could indicate that DAQO stock is volatile and sensitive to market fluctuations. Looking at all twelve corporations, most boasted a high return in 2017 but a much lower return in 2018. Considering this, we can assume that some events will affect the market on a broad scale. While DAQO stock appears to have performed poorly compared to the other twelve tickers, we would want to analyze additional data for subsequent years to determine if any trends or patterns exist. We might find that DAQO stock recovered quite nicely!
 
